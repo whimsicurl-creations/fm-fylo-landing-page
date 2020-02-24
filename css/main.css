@@ -1,0 +1,11 @@
+:root {
+    --vdkblue: hsl(243, 87%, 12%);
+    --blue: hsl(238, 22%, 44%);
+    --brightblue: hsl(224, 93%, 58%);
+    --modcyan: hsl(170, 45%, 43%);
+    --ltgrayblue: hsl(240, 75%, 98%);
+    --ltgray: hsl(0, 0%, 75%);
+    --heading: 'Raleway', sans-serif;
+    --bodytext: 'Open Sans', sans-serif;
+}
+
