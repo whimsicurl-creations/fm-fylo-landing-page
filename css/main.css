@@ -9,3 +9,12 @@
     --bodytext: 'Open Sans', sans-serif;
 }
 
+body {
+    box-sizing: border-box;
+    font-family: var(--bodytext);
+    font-size: 16px;
+}
+
+footer img:first-of-type {
+    filter: brightness(0%) invert(100%);
+}
