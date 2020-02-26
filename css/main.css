@@ -102,7 +102,7 @@ nav ul li a {
 
 /* SECTION ONE */
 #one {
-    margin: 4rem auto 8rem;
+    margin: 4rem auto 6rem;
 }
 #one h1 {
     font-family: var(--bodytext);
@@ -117,7 +117,7 @@ nav ul li a {
 }
 
 /* SECTION TWO */
-#two::before {
+/* #two::before {
     content: '';
     background-image: url('../images/bg-curve-mobile.svg');
     background-repeat: no-repeat;
@@ -129,10 +129,14 @@ nav ul li a {
     right: 0;
     height: 95px;
     z-index: -1;
+} */
+#shape {
+    width: 100vw;
 }
 #two {
     background: var(--ltgrayblue);
     position: relative;
+    margin-top: -5px;
 }
 #two p {
     text-align: left;
@@ -155,11 +159,56 @@ nav ul li a {
     width: 20px;
     margin-bottom: -5px;
 }
+.card {
+    background: white;
+    width: 70%;
+    margin: 2rem auto 5rem;
+    padding: 20px;
+    border-radius: 4px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    justify-content: start;
+    align-items: start;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.card img:first-of-type {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 0;
+}
+#two .card p {
+    grid-column: 1 / -1;
+    width: 100%;
+    font-size: 0.65rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.avatar {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+#avatar {
+    border-radius: 50%;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+}
+.avatar h1 span {
+    font-size: 0.7rem;
+}
+.avatar h1 {
+    font-size: 0.5rem;
+    text-align: left;
+    margin: 0;
+}
+
 
 /* SECTION THREE */
 #three {
     background: var(--blue);
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 #three h1,
 #three p {
@@ -167,6 +216,10 @@ nav ul li a {
 }
 #three h1 {
     font-size: 1.5rem;
+}
+#three input[type="email"] {
+    margin-bottom: 0;
+    border: 0;
 }
 
 
