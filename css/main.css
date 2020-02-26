@@ -36,9 +36,10 @@ a {
 input {
     border-radius: 3px;
     box-shadow: none;
-    width: 75%;
+    width: calc(90% - 20px);
+    /* width: 75%; */
     margin: 10px auto;
-    padding: 10px 20px;
+    padding: 10px 0px 10px 20px;
 }
 ::placeholder {
     color: var(--ltgray);
@@ -51,23 +52,29 @@ input[type="submit"] {
     color: white;
     font-weight: 700;
     font-family: var(--heading);
-    width: 87%;
+    width: 90%
+    /* width: 83%; */
 }
 .wrapper {
     display: grid;
     grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     margin: 0 auto;
 }
 section img {
     max-width: 85vw;
     padding: 20px;
+    margin: 0 auto;
 }
 section h1,
 section p {
     text-align: center;
     width: 90%;
     margin: 10px auto;
+    line-height: 1.5;
+    font-size: 0.95rem;
 }
 
 
@@ -105,7 +112,6 @@ nav ul li a {
     font-size: 1.5rem;
 }
 #one p {
-    font-size: 0.95rem;
     margin-bottom: 40px;
 }
 #one input[type="email"] {
@@ -117,20 +123,39 @@ nav ul li a {
     content: '';
     background-image: url('../images/bg-curve-mobile.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: top center;
+    background-size: 100vw;
     position: absolute;
     top: -50px;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 95px;
     z-index: -1;
 }
 #two {
     background: var(--ltgrayblue);
     position: relative;
 }
+#two p {
+    text-align: left;
+    width: 95%;
+    color: var(--blue);
+}
 #two a {
     font-family: var(--bodytext);
+    font-size: 0.9rem;
+    color: var(--modcyan);
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--modcyan);
+    width: 160px;
+    text-align: center;
+    justify-self: center;
+    margin: 25px auto;
+}
+#two a img {
+    padding: 0;
+    width: 20px;
+    margin-bottom: -5px;
 }
 
 /* SECTION THREE */
