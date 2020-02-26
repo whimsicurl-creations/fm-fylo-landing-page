@@ -37,7 +37,6 @@ input {
     border-radius: 3px;
     box-shadow: none;
     width: calc(90% - 20px);
-    /* width: 75%; */
     margin: 10px auto;
     padding: 10px 0px 10px 20px;
 }
@@ -48,12 +47,11 @@ input {
 input[type="submit"] {
     background: var(--brightblue);
     border: 1px solid var(--brightblue);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     color: white;
     font-weight: 700;
     font-family: var(--heading);
     width: 90%
-    /* width: 83%; */
 }
 .wrapper {
     display: grid;
@@ -161,10 +159,14 @@ nav ul li a {
 /* SECTION THREE */
 #three {
     background: var(--blue);
+    padding: 5rem 0;
 }
 #three h1,
 #three p {
     color: white;
+}
+#three h1 {
+    font-size: 1.5rem;
 }
 
 
