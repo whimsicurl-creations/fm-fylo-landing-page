@@ -50,7 +50,8 @@ input[type="submit"] {
     color: white;
     font-weight: 700;
     font-family: var(--heading);
-    width: 90%
+    width: 90%;
+    cursor: pointer;
 }
 .wrapper {
     display: grid;
@@ -106,6 +107,10 @@ nav ul li a {
     font-size: 0.9rem;
     margin-right: 0.75rem;
 }
+nav ul li:hover a {
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--vdkblue);
+}
 nav ul li:last-of-type a {
     margin-right: 0;
 }
@@ -124,6 +129,10 @@ nav ul li:last-of-type a {
 }
 #one input[type="email"] {
     border: 1px solid var(--vdkblue);
+}
+#one input[type="submit"]:hover {
+    background: var(--blue);
+    border: 1px solid var(--blue);
 }
 
 /* SECTION TWO */
@@ -153,11 +162,15 @@ nav ul li:last-of-type a {
     text-align: center;
     justify-self: center;
     margin: 25px auto;
+    transition: all 0.2s ease;
 }
 #two a img {
     padding: 0;
     width: 20px;
     margin-bottom: -5px;
+}
+#two a:hover {
+    transform: scale(1.1);
 }
 .card {
     background: white;
@@ -220,6 +233,10 @@ nav ul li:last-of-type a {
     margin-bottom: 0;
     border: 0;
 }
+#three input[type="submit"]:hover {
+    background: var(--modcyan);
+    border: 1px solid var(--modcyan);
+}
 
 
 /* FOOTER */
@@ -264,6 +281,11 @@ footer a {
 .sitemap li {
     line-height: 2;
 }
+.sitemap ul:nth-of-type(1) li a:hover,
+.sitemap ul:nth-of-type(2) li a:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid white;
+}
 #social-icons {
     display: grid;
     grid-gap: 10px;
@@ -283,6 +305,9 @@ footer a {
 }
 #social-icons #facebook {
     padding: 0 0 10px 10px;
+}
+#social-icons li:hover {
+    transform: scale(1.2);
 }
 
 /* MEDIA QUERIES */
@@ -383,7 +408,7 @@ footer a {
         font-size: 0.8rem;
     }
     #two .card h1 {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         grid-column: 2 / -1;
         margin: 0;
     }
