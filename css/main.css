@@ -10,8 +10,13 @@
 }
 
 /* GLOBAL STYLES */
+html {
+    /* max-width: 100vw; */
+    /* max-width: 100%; */
+    /* box-sizing: border-box; */
+}
 body {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: var(--bodytext);
     font-size: 16px;
     color: var(--vdkblue);
@@ -60,6 +65,10 @@ input[type="submit"] {
     align-items: center;
     width: 90%;
     margin: 0 auto;
+}
+.text-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 section img {
     max-width: 85vw;
@@ -117,19 +126,6 @@ nav ul li a {
 }
 
 /* SECTION TWO */
-/* #two::before {
-    content: '';
-    background-image: url('../images/bg-curve-mobile.svg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100vw;
-    position: absolute;
-    top: -50px;
-    left: 0;
-    right: 0;
-    height: 95px;
-    z-index: -1;
-} */
 #shape {
     width: 100vw;
 }
@@ -203,7 +199,6 @@ nav ul li a {
     text-align: left;
     margin: 0;
 }
-
 
 /* SECTION THREE */
 #three {
@@ -281,4 +276,71 @@ footer a {
 }
 #social-icons li {
     padding: 0 0 10px 8px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 700px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    .wrapper img {
+        max-width: 90%;
+    }
+    .text-wrapper {
+        order: -1;
+        grid-template-columns: 2fr 1fr;
+        justify-content: start;
+    }
+    .text-wrapper > * {
+        margin: 10px;
+    }
+    /* HEADER */
+    header {
+        padding: 2rem;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    /* SECTION ONE */
+    #one .text-wrapper h1,
+    #one .text-wrapper p {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+    #one input[type="submit"] {
+        padding: 10px 15px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    /* SECTION TWO */
+    #two .text-wrapper h1,
+    #two .text-wrapper p,
+    #two .text-wrapper a {
+        grid-column: 1 / -1;
+        text-align: left;
+        margin: 10px;
+        justify-self: start;
+    }
+
+    /* SECTION THREE */
+    #three .wrapper {
+        justify-content: start;
+        align-items: start;
+    }
+    #three .wrapper > * {
+        text-align: left;
+        margin: 10px;
+    }
+    #three p {
+        order: 3;
+    }
+    #three input[type="email"] {
+        order: 2;
+    }
+    #three input[type="submit"] {
+        order: 4;
+        width: 40%;
+        padding: 10px 15px;
+        text-align: center;
+    }
 }
