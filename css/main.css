@@ -137,7 +137,7 @@ nav ul li:last-of-type a {
 
 /* SECTION TWO */
 #mobile-shape {
-    width: 100vw;
+    width: 100%;
 }
 #desktop-shape {
     display: none;
@@ -372,7 +372,7 @@ footer a {
     }
     #desktop-shape {
         display: block;
-        width: 100vw;
+        width: 100%;
     }
     #two {
         padding: 4rem 0;
