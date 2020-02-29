@@ -309,6 +309,11 @@ footer a {
 #social-icons li:hover {
     transform: scale(1.2);
 }
+.screen-reader-text {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 700px) {
